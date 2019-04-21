@@ -1,3 +1,16 @@
+%% Air Taxi Passenger Wait Time Optimization
+% Chris Moneyron, AAE 590 Distributed Network Control
+% Purdue University, Instructor: Shaoshuai Mou
+% 21 April, 2019
+%
+% Network must be entered/updated into adjacency matrix, A
+%
+% Adjacency matrix weights represent time from destination a to destination
+% b including stopping at origin b
+%
+% Based on technical requirements from Uber (vel = 175 mph, range = 61.25
+% miles/21 min, recharge time = 5 min)
+
 % Brute force if n <= x and greedy if n > x since runtime is
 % too long and the greedy algorithm is a good approximation since
 % most requests will be close together if there are that many
